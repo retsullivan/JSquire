@@ -4,16 +4,18 @@ import java.util.Scanner;
 public class ConsoleKihon extends ConsoleKihonBase {
     @Override
     protected void writeFooBarToTheConsole() {
-        throw new UnsupportedOperationException();
+        System.out.print("FooBar");
     }
 
     @Override
     protected void writeLineFooBarToTheConsole() {
-        throw new UnsupportedOperationException();
+        System.out.println("FooBar");
     }
 
     @Override
     protected String readLineFromConsoleAndReturnValue() {
-        throw new UnsupportedOperationException();
-    }
+            Scanner in = new Scanner(System.in);
+            String input = in.nextLine();
+            return input;
+        }
 }
